@@ -245,9 +245,9 @@ section {
 .footer .box-container {
     display: flex;
             flex-wrap: wrap;
-            gap: 2rem;
+            gap: 1rem;
             justify-content: center;repeat(auto-fit, minmax(27rem, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: flex-start;
 }
 

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="icon" href="images/Logo.jpeg"/>
+    <link rel="icon" href="images/Logo.jpeg" />
+
     <style>
         /* General Content Padding */
         .content {
             padding: 10px;
             box-sizing: border-box;
-            max-width: 600px;
-            margin: 0 auto;
         }
 
         /* Body Background */
@@ -20,30 +20,25 @@
             background-position: center center;
             position: relative;
             margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
         }
 
         /* Text Styling */
-        p, label {
+        p,
+        label {
             font-family: 'Product Sans', sans-serif;
-            font-size: 1.25rem;
+            font-size: 20px;
             color: #f39c12;
         }
 
         h2 {
             font-family: 'Product Sans', sans-serif;
-            font-size: 2.5rem;
+            font-size: 55px;
             color: #f39c12;
-            text-align: center;
-            margin-bottom: 1.5rem;
         }
 
         span {
             font-family: 'Product Sans', sans-serif;
-            font-size: 2.5rem;
+            font-size: 50px;
         }
 
         /* Button Design */
@@ -63,7 +58,7 @@
 
         /* Button hover effect */
         .buttonsEnter:hover {
-            transform: scale(1.1);
+            transform: scale(1.50);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             background: linear-gradient(45deg, #ff5733, gray);
             color: #fff;
@@ -72,7 +67,7 @@
         /* Select Dropdown Styling */
         select {
             font-family: 'Product Sans', sans-serif;
-            font-size: 1rem;
+            font-size: 14px;
             padding: 10px;
             border-radius: 10px;
             border: 2px solid #f39c12;
@@ -80,9 +75,6 @@
             color: #333;
             cursor: pointer;
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            width: 100%;
-            max-width: 300px;
-            margin-top: 1rem;
         }
 
         select:focus {
@@ -91,51 +83,97 @@
             box-shadow: 0 0 8px rgba(255, 87, 51, 0.6);
         }
 
-        /* Dropdown Options */
         option {
             font-family: 'Product Sans', sans-serif;
-            font-size: 1rem;
-            padding: 10px;
+            font-size: 10px;
+            padding: 20px;
             background: #fff;
             color: #333;
-            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        option:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        /* Center content */
+        .content center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             h2 {
-                font-size: 2rem;
+                font-size: 35px;
             }
 
             .buttonsEnter {
-                font-size: 1.1rem;
-                padding: 0.75rem 2rem;
+                font-size: 18px;
+                padding: 12px 24px;
             }
 
             select {
-                font-size: 1rem;
-                padding: 8px;
+                width: 100%;
+                font-size: 16px;
+            }
+
+            .content center img {
+                width: 150px;
+                height: 150px;
             }
         }
 
         @media (max-width: 480px) {
             h2 {
-                font-size: 1.5rem;
+                font-size: 28px;
             }
 
             .buttonsEnter {
-                font-size: 1rem;
-                padding: 0.5rem 1.5rem;
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+
+            select {
+                font-size: 14px;
+            }
+
+            .content center img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        /* Added Adjustments */
+        @media (min-width: 1200px) {
+            body {
+                background-attachment: fixed; /* Locks background for larger desktops */
+            }
+
+            h2 {
+                font-size: 60px; /* Slightly larger font for desktops */
+            }
+
+            .content center img {
+                width: 250px; /* Larger logo on desktops */
+                height: 250px;
+            }
+
+            .buttonsEnter {
+                font-size: 1.5rem; /* Slightly larger button text */
+                padding: 1.2rem 4rem;
             }
         }
     </style>
+
     <title>Home page</title>
 </head>
 
 <body>
     <div class="content">
         <center>
-            <img src="images/Logo.jpeg" style="width:150px; height:150px;">
+            <img src="images/Logo.jpeg" style="width:200px; height:200px;">
             <h2>Welcome to the <b>DJCS BURGER</b></h2>
 
             <label for="country">Choose your country</label>
@@ -168,4 +206,5 @@
         </center>
     </div>
 </body>
+
 </html>

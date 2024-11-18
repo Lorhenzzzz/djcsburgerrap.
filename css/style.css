@@ -280,7 +280,7 @@ section {
 }
 
 /* Media Queries */
-@media (max-width:991px) {
+@media (max-width:890px) {
     html {
         font-size: 55%;
     }

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJCS BURGERRAP</title>
+    <link rel="icon" href="images/Logo.jpeg"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+      <!--custom css file link-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+  <style>
+  body {
+    background: url(images/proxy-image.jfif) no-repeat;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .menu h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .menu .box {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .menu .box img {
+    
+   
+    margin: 0 auto 1rem;
+  }
+
+  .menu .box h3 {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .menu .box p {
+    font-size: 3rem;
+    color: white;
+  }
+
+  .menu .box .description {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 1rem;
+    padding-left: 5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .menu .box:hover .description {
+    display: flex;
+    opacity: 1;
+  }
+
+  .menu .box:hover {
+    transform: scale(1.05);
+    background: rgba(255, 165, 0, 0.8);
+    border-image: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #91eae4) 1;
+    border-image-slice: 1;
+    animation: gradient-border 3s infinite;
+  }
+
+  /* Gradient animation */
+  @keyframes gradient-border {
+    0% {
+      border-image-source: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+    }
+    50% {
+      border-image-source: linear-gradient(45deg, #86a8e7, #91eae4, #ff7e5f, #feb47b);
+    }
+    100% {
+      border-image-source: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+    }
+  }
+</style>
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <section class="flex">
+      <a href="#home"><img src="images/Logo.jpeg" width="80" alt="Logo"></a>
+      <nav class="navbar">
+        <a href="main.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="burger.html">BURGER</a>
+        <a href="footlong.html">FOOTLONG</a>
+        <a href="drinks.html">DRINKS</a>
+        <a href="gallery.html">FOUNDER</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+  </header>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="heading">
+      <h3>OUR BURGERS</h3>
+    </div>
+    <div class="box-container">
+      <div class="box">
+        <img src="images/81539-middle-removebg-preview.png" alt="Plain Burger" width="200" height="200">
+        <h3>PLAIN BURGER</h3>
+        <div class="description">
+          <p>Price: ₱50
+          <br>Simple yet delicious burger with fresh ingredients.</p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/b17a5281492595dab6d4750896d303fe-removebg-preview.png" alt="Chicken Burger" width="220">
+        <h3>CHICKEN BURGER</h3>
+        <div class="description">
+          <p>Price: ₱70
+          <br>Crispy chicken patty with fresh lettuce and sauce.</p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/477f4a32-92c1-49f0-9f0b-28b8fde28634-removebg-preview.png" alt="Double Chicken Burger" width="170">
+        <h3>DOUBLE CHICKEN BURGER</h3>
+        <div class="description">
+          <p>Price: ₱100<br>
+          Double the chicken, double the flavor!</p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/Burgmenu.png" alt="Double Patty Burger" width="210">
+        <h3>DOUBLE PATTY BURGER</h3>
+        <div class="description">
+          <p>Price: ₱120
+          <br>Loaded with two juicy patties and melting cheese.</p>
+          
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/bacon-removebg-preview.png" alt="bacon Burger" width="200">
+        <h3>BACON BURGER</h3>
+        <div class="description">
+          <p>Price: ₱120
+          <br>Loaded with bacon and melting cheese.</p>
+          
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     
+
+        
+      </div>
+    </div>
+  </section>
+      <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>OUR EMAIL</h3>
+                <p>djcsburgerrap@gmail.com</p>
+               
+            </div>
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>OPENING HOURS</h3>
+                <p>8:00am to 7:00pm</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>OUR LOCATION</h3>
+                <p>Las Piñas</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>OUR NUMBER</h3>
+                <p>+123-456-789</p>
+                <p>+111-111-333</p>
+            </div>
+        </div>
+        <div class="credit"> &copy; copyright @ 2024 by <span>DaveDelosReyes</span> | All rights reserved!</div>
+    </section>
+
+        <!-- JavaScript file -->
+    <script src="js/scripts.js"></script>
+  </section>
+</body>
+</html>

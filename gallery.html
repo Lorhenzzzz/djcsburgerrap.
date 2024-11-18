@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJCS BURGERRAP</title>
+    <link rel="icon" href="images/Logo.jpeg" />
+
+    <!--font links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--custom css file link-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-color: #808080;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+
+        .team .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+ 
+        .team .heading h3 {
+            color:white;
+        }
+    .team .box-container h1{
+        color:white;
+    }
+       /* Team box styling */
+.team .box {
+    position: relative;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+    
+    /* Transparent border with rotating gradient effect */
+    border: 3px solid transparent;
+    border-radius: 0.5rem;
+    background-clip: padding-box;  /* Ensures background doesn't overlap border */
+    animation: gradient-border 5s linear infinite; /* Continuous gradient animation */
+}
+
+/* Continuous rotating gradient border */
+@keyframes gradient-border {
+    0% {
+        border-image: linear-gradient(45deg, #ffcc00, #ff6f00, #ffcc00, #ff6f00);
+        border-image-slice: 1;
+    }
+    50% {
+        border-image: linear-gradient(135deg, #ffcc00, #ff6f00, #ffcc00, #ff6f00);
+        border-image-slice: 1;
+    }
+    100% {
+        border-image: linear-gradient(225deg, #ffcc00, #ff6f00, #ffcc00, #ff6f00);
+        border-image-slice: 1;
+    }
+}
+
+/* Box image hover effect */
+.team .box img {
+   
+
+    border-radius: 50%;
+    filter: brightness(0.5);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.team .box:hover img {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+/* Description styling */
+.team .box .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.team .box:hover .description {
+    transform: translateY(0);
+}
+
+
+        .footer {
+            background-color: #222;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .footer .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .footer .box i {
+            color: #ffcc00;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer .credit span {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="#home"><img src="images/Logo.jpeg" width="80" alt="Logo"></a>
+            <nav class="navbar">
+                <a href="main.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="burger.html">BURGER</a>
+                <a href="footlong.html">FOOTLONG</a>
+                <a href="drinks.html">DRINKS</a>
+                <a href="gallery.html">FOUNDER</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header>
+
+    <section class="team" id="team">
+        <div class="heading">
+            <h3>FOUNDER</h3>
+        </div>
+        <div class="box-container">
+            <a href="dave.html">
+                <div class="box">
+                    <img src="images/received_957246929103567.jpeg" alt="" height="300">
+                    <h1>Dave Lorhenz Delos Reyes</h1>
+                    <div class="description">CEO and Founder of DJCS BURGERRAP</div>
+                </div>
+            </a>
+            <a href="jeff.html">
+                <div class="box">
+                    <img src="images/jef.jpg" alt="" height="300" width="200">
+                    <h1>Jeffrey Deniega</h1>
+                    <div class="description">Co-Founder and Marketing Specialist</div>
+                </div>
+            </a>
+            <a href="carl.html">
+                <div class="box">
+                    <img src="images/panis.jpeg" alt="" height="300" width="200">
+                    <h1>Carl Laurence Panis</h1>
+                    <div class="description">Operations Manager</div>
+                </div>
+            </a>
+            <a href="sed.html">
+                <div class="box">
+                    <img src="images/Sed.jpeg" alt="" height="295">
+                    <h1>Sedrick Blanca</h1>
+                    <div class="description">Chief Financial Officer</div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>OUR EMAIL</h3>
+                <p>burgerrap@gmail.com</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>OPENING HOURS</h3>
+                <p>8:00am to 7:00pm</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>OUR LOCATION</h3>
+                <p>Las Piñas</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>OUR NUMBER</h3>
+                <p>+123-456-789</p>
+                <p>+111-111-333</p>
+            </div>
+        </div>
+        <div class="credit">&copy; copyright @
+            2024 by <span>DaveDelosReyes</span> | All rights reserved!
+        </div>
+    </section>
+        <script src="js/scripts.js"></script>
+</body>
+
+</html>

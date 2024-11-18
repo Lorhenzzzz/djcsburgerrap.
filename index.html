@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/Logo.jpeg"/>
+
+<style>
+    /* General Content Padding */
+    .content {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Body Background */
+    body {
+        background-color: #ffffff;
+        background-image: url(images/Bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        margin: 0;
+    }
+
+    /* Text Styling */
+    p, label {
+        font-family: 'Product Sans', sans-serif;
+        font-size: 20px;
+        color: #f39c12;
+    }
+
+    h2 {
+        font-family: 'Product Sans', sans-serif;
+        font-size: 55px;
+        color: #f39c12;
+    }
+
+    span {
+        font-family: 'Product Sans', sans-serif;
+        font-size: 50px;
+    }
+
+    /* Button Design */
+    .buttonsEnter {
+        display: inline-block;
+        margin-top: 1rem;
+        background: linear-gradient(45deg, gray, #ff5733);
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.3rem;
+        padding: 1rem 3rem;
+        border-radius: 10px; /* Rounded corners */
+        border: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
+    }
+
+   /* Button hover effect */
+.buttonsEnter:hover {
+    transform: scale(1.50); /* Slight zoom-in effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    background: linear-gradient(45deg, #ff5733, gray); /* Gradient from light blue to dark blue */
+    color: #fff; /* Text color changes to white */
+}
+
+/* Dropdown option hover effect */
+
+
+
+
+    /* Select Dropdown Styling */
+    select {
+        font-family: 'Product Sans', sans-serif;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #f39c12;
+        background: #fff;
+        color: #333;
+        cursor: pointer;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    select:focus {
+        outline: none;
+        border-color: #ff5733;
+        box-shadow: 0 0 8px rgba(255, 87, 51, 0.6); /* Highlight effect */
+    }
+
+    /* Dropdown Options */
+    option {
+        font-family: 'Product Sans', sans-serif;
+        font-size: 10px;
+        padding: 20px;
+        background: #fff;
+        color: #333;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    option:hover {
+    background-color: #007BFF; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 30px; /* Smaller heading on mobile */
+        }
+
+        .buttonsEnter {
+            font-size: 16px; /* Smaller button text on mobile */
+            padding: 10px 20px;
+        }
+
+        select {
+            width: 100%; /* Full-width dropdown */
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 24px;
+        }
+
+        .buttonsEnter {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+    }
+</style>
+
+    <title>Home page</title>
+</head>
+
+<body>
+    <div class="dimmed-background"></div>
+
+    <div class="content">
+        <center> 
+            <img src="images/Logo.jpeg" style="width:200px; height:200px;">
+            <h2>Welcome to the <b>DJCS BURGER</b></h2>
+
+            <br><br>
+
+            <label for="country">Choose your country</label>
+            <select id="country">
+                <option>Philippines</option>
+                <option>Brazil</option>
+                <option>Canada</option>
+                <option>China</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>India</option>
+                <option>Italy</option>
+                <option>Japan</option>
+                <option>Mexico</option>
+                <option>Argentina</option>
+                <option>Russia</option>
+                <option>Saudi Arabia</option>
+                <option>South Africa</option>
+                <option>South Korea</option>
+                <option>Spain</option>
+                <option>Turkey</option>
+                <option>United Kingdom</option>
+                <option>United States</option>
+            </select>
+
+            <br>
+            <a href="main.html">
+                <button class="buttonsEnter">Enter</button>
+            </a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </center>
+    </div>
+</body>
+
+</html>

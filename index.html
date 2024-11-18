@@ -34,6 +34,7 @@
             font-family: 'Product Sans', sans-serif;
             font-size: 55px;
             color: #f39c12;
+            text-align: center;
         }
 
         span {
@@ -58,16 +59,15 @@
 
         /* Button hover effect */
         .buttonsEnter:hover {
-            transform: scale(1.50);
+            transform: scale(1.05);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             background: linear-gradient(45deg, #ff5733, gray);
-            color: #fff;
         }
 
         /* Select Dropdown Styling */
         select {
             font-family: 'Product Sans', sans-serif;
-            font-size: 14px;
+            font-size: 16px;
             padding: 10px;
             border-radius: 10px;
             border: 2px solid #f39c12;
@@ -85,22 +85,19 @@
 
         option {
             font-family: 'Product Sans', sans-serif;
-            font-size: 10px;
-            padding: 20px;
+            font-size: 14px;
+            padding: 5px;
             background: #fff;
             color: #333;
         }
 
-        option:hover {
-            background-color: #007BFF;
-            color: #fff;
-        }
-
-        /* Center content */
-        .content center {
+        /* Center Content */
+        .content {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
 
         /* Responsive Design */
@@ -111,15 +108,15 @@
 
             .buttonsEnter {
                 font-size: 18px;
-                padding: 12px 24px;
+                padding: 10px 20px;
             }
 
             select {
-                width: 100%;
-                font-size: 16px;
+                font-size: 14px;
+                width: 90%;
             }
 
-            .content center img {
+            img {
                 width: 150px;
                 height: 150px;
             }
@@ -132,37 +129,17 @@
 
             .buttonsEnter {
                 font-size: 16px;
-                padding: 10px 20px;
+                padding: 8px 16px;
             }
 
             select {
-                font-size: 14px;
+                font-size: 12px;
+                width: 100%;
             }
 
-            .content center img {
+            img {
                 width: 120px;
                 height: 120px;
-            }
-        }
-
-        /* Added Adjustments */
-        @media (min-width: 1200px) {
-            body {
-                background-attachment: fixed; /* Locks background for larger desktops */
-            }
-
-            h2 {
-                font-size: 60px; /* Slightly larger font for desktops */
-            }
-
-            .content center img {
-                width: 250px; /* Larger logo on desktops */
-                height: 250px;
-            }
-
-            .buttonsEnter {
-                font-size: 1.5rem; /* Slightly larger button text */
-                padding: 1.2rem 4rem;
             }
         }
     </style>
@@ -172,38 +149,35 @@
 
 <body>
     <div class="content">
-        <center>
-            <img src="images/Logo.jpeg" style="width:200px; height:200px;">
-            <h2>Welcome to the <b>DJCS BURGER</b></h2>
+        <img src="images/Logo.jpeg" style="width:200px; height:200px;">
+        <h2>Welcome to the <b>DJCS BURGER</b></h2>
 
-            <label for="country">Choose your country</label>
-            <select id="country">
-                <option>Philippines</option>
-                <option>Brazil</option>
-                <option>Canada</option>
-                <option>China</option>
-                <option>France</option>
-                <option>Germany</option>
-                <option>India</option>
-                <option>Italy</option>
-                <option>Japan</option>
-                <option>Mexico</option>
-                <option>Argentina</option>
-                <option>Russia</option>
-                <option>Saudi Arabia</option>
-                <option>South Africa</option>
-                <option>South Korea</option>
-                <option>Spain</option>
-                <option>Turkey</option>
-                <option>United Kingdom</option>
-                <option>United States</option>
-            </select>
+        <label for="country">Choose your country</label>
+        <select id="country">
+            <option>Philippines</option>
+            <option>Brazil</option>
+            <option>Canada</option>
+            <option>China</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>India</option>
+            <option>Italy</option>
+            <option>Japan</option>
+            <option>Mexico</option>
+            <option>Argentina</option>
+            <option>Russia</option>
+            <option>Saudi Arabia</option>
+            <option>South Africa</option>
+            <option>South Korea</option>
+            <option>Spain</option>
+            <option>Turkey</option>
+            <option>United Kingdom</option>
+            <option>United States</option>
+        </select>
 
-            <br>
-            <a href="main.html">
-                <button class="buttonsEnter">Enter</button>
-            </a>
-        </center>
+        <a href="main.html">
+            <button class="buttonsEnter">Enter</button>
+        </a>
     </div>
 </body>
 

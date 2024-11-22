@@ -112,70 +112,33 @@
     }
   }
      
-            /* General layout setup */
+            .footer {
+        background-color: #333;
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+                margin-top: 50px; 
+    }
 
-main {
-  flex: 1;
-}
+    .footer .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
 
-/* Footer styling */
-.footer {
-  background-color: #333; /* Dark background for contrast */
-  color: white;
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 0.9rem;
-  position: relative; /* Default static position */
-  bottom: 0;
-  width: 100%;
-}
+    .footer .box {
+        max-width: 250px;
+    }
 
-.footer .box-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap; /* Ensure wrapping on small screens */
-}
+    .footer .credit {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
 
-.footer .box {
-  max-width: 150px;
-  text-align: center;
-}
-
-.footer .box img {
-  width: 30px; /* Consistent icon size */
-  height: 30px;
-}
-
-.footer .box p {
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-.footer .box span {
-  display: block;
-  font-size: 0.85rem;
-  color: #ccc; /* Light gray for better visibility */
-}
-
-.footer p {
-  margin-top: 20px;
-  font-size: 0.8rem;
-  color: #bbb;
-}
-
-/* Responsive design for mobile devices */
-@media (max-width: 768px) {
-  .footer .box-container {
-    flex-direction: column; /* Stack boxes on smaller screens */
-    gap: 10px;
-  }
-
-  .footer .box {
-    max-width: 100%; /* Make boxes flexible */
-  }
-}
-
+    .footer .credit span {
+        color: #ffcc00;
+    }
       
     
 </style>

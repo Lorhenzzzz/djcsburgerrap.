@@ -41,14 +41,14 @@
 
 
 .menu .box {
-    flex: 1 1 200px; /* Boxes will scale evenly; minimum width is 200px */
-    max-width: 250px; /* Set a maximum width */
-    text-align: center; /* Center text inside each box */
-    margin: 0.5rem; /* Add spacing around each box */
+    position: relative;
     background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
     padding: 1rem;
-    transition: transform 0.3s ease, background 0.3s ease;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
 }
 
   .menu .box img {

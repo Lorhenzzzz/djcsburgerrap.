@@ -30,39 +30,7 @@
     text-align: center;
   }
 
-.menu .box-container {
-    display: grid; /* Use grid layout for precise control */
-    grid-template-columns: repeat(5, 1fr); /* 5 columns with equal width */
-    gap: 1rem; /* Adjust spacing between boxes */
-    justify-content: center; /* Center the grid */
-    align-items: center; /* Align items vertically */
-    padding: 1rem 0; /* Add padding for top and bottom spacing */
-}
 
-.menu .box {
-    width: 200px; /* Set a fixed width for all boxes */
-    height: 260px; /* Set a fixed height for all boxes */
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    text-align: center;
-    padding: 1rem;
-    overflow: hidden;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.menu .box img {
-    width: 100%; /* Make images fit the width of the box */
-    height: auto; /* Maintain image proportions */
-    max-height: 120px; /* Limit image height */
-    margin-bottom: 1rem;
-}
-
-.menu .box h3 {
-    font-size: 1.2rem;
-    color: white;
-    text-transform: uppercase;
-    margin: 0.5rem 0;
-}
 
 .menu .box p {
     font-size: 0.9rem;
@@ -98,7 +66,49 @@
     background: rgba(255, 165, 0, 0.8);
     border-image: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #91eae4) 1;
     border-image-slice: 1;
-    animation: gradient-border 3s infinite;
+    animation: gradient-border 3s infinite.menu .box-container {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping if the screen size is small */
+    justify-content: space-evenly; /* Evenly distribute space between items */
+    align-items: center; /* Align items vertically */
+    gap: 2rem; /* Add space between items */
+    padding: 2rem 0; /* Add padding above and below */
+}
+
+.menu .box-container {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping if the screen size is small */
+    justify-content: space-evenly; /* Evenly distribute space between items */
+    align-items: center; /* Align items vertically */
+    gap: 1rem; /* Add space between items */
+    padding: 2rem 0; /* Add padding above and below */
+}
+
+.menu .box {
+    flex: 1 1 200px; /* Boxes will scale evenly; minimum width is 200px */
+    max-width: 250px; /* Set a maximum width */
+    text-align: center; /* Center text inside each box */
+    margin: 0.5rem; /* Add spacing around each box */
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.menu .box img {
+    
+    
+    margin-bottom: 1rem;
+}
+
+.menu .box h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+
   }
 
   /* Gradient animation */

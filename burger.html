@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,13 +31,42 @@
     text-align: center;
   }
 
-
-
-.menu .box p {
-    font-size: 0.9rem;
-    color: white;
+.menu .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 2rem; /* Space between boxes */
+    height: 100vh; /* Make the container full height */
 }
 
+
+.menu .box {
+    flex: 1 1 200px; /* Boxes will scale evenly; minimum width is 200px */
+    max-width: 250px; /* Set a maximum width */
+    text-align: center; /* Center text inside each box */
+    margin: 0.5rem; /* Add spacing around each box */
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+  .menu .box img {
+    
+   
+    margin: 0 auto 1rem;
+  }
+
+  .menu .box h3 {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .menu .box p {
+    font-size: 3rem;
+    color: white;
+  }
 
   .menu .box .description {
     display: none;
@@ -66,48 +96,7 @@
     background: rgba(255, 165, 0, 0.8);
     border-image: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #91eae4) 1;
     border-image-slice: 1;
-    animation: gradient-border 3s infinite.menu .box-container {
-    display: flex; /* Flexbox layout */
-    flex-wrap: wrap; /* Allow wrapping if the screen size is small */
-    justify-content: space-evenly; /* Evenly distribute space between items */
-    align-items: center; /* Align items vertically */
-    gap: 2rem; /* Add space between items */
-    padding: 2rem 0; /* Add padding above and below */
-}
-.menu .box-container {
-    display: flex; /* Flexbox layout */
-    flex-wrap: wrap; /* Allow wrapping if the screen size is small */
-    justify-content: space-evenly; /* Evenly distribute space between items */
-    align-items: center; /* Align items vertically */
-    gap: 2rem; /* Add space between items */
-    padding: 2rem 0; /* Add padding above and below */
-}
-
-.menu .box {
-    flex: 1 1 200px; /* Boxes will scale evenly; minimum width is 200px */
-    max-width: 250px; /* Set a maximum width */
-    text-align: center; /* Center text inside each box */
-    margin: 0.5rem; /* Add spacing around each box */
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    padding: 1rem;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.menu .box img {
-    
-    margin-bottom: 1rem;
-}
-
-.menu .box h3 {
-    color: white;
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    text-transform: uppercase;
-}
-
-
-
+    animation: gradient-border 3s infinite;
   }
 
   /* Gradient animation */
